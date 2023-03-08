@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="fontawesome/css/all.css" rel="stylesheet" >
 
-    <title>Activity 3</title>
+    <title>Integrating FontAwesome</title>
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #383d46;">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="#">CITCS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,17 +51,17 @@
 
     <div class="container-fluid">
       <div class="row">
-
         <div class="col-md-8">
-          <div class="jumbotron py-5  mt-3 p-4 shadow">
-            <h1 class="display-4 opacity-100 m-2">Hello, World!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p><p class="col-12 fs-6 border-bottom border-2  py-1 m-2"></p>
-            <p class="">It uses utility classes for typography and spacing to space content out withing larger container.</p>
-            <p class="lead">
-                <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+          <div class="container-fluid py-5 rounded-3 mt-3 p-4 shadow" style="background-color: #e9ebf1;">
+            <h1 class="display-4 opacity-100 m-2">Hello, world!</h1>
+            <p class="col-12 fs-5 fw-lighter opacity-75 m-2">This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.</p>
+            <p class="col-12 fs-6 border-bottom border-2  py-1 m-2"></p>
+            <p class="col-12 fs-6 opacity-100 py-2 m-2">It uses utility classes for typography and spacing to space content out withing larger container.</p>
+            <button class="btn btn-success bg-opacity-100 btn-lg m-2" type="button">Learn more</button>
+            <div class="col-12 py-3"></div>
         </div>
 
-    </div>
+        </div>
         <div class="col-md-4 mt-3 border border-2">
           <form>
             <div class="mb-3">
@@ -80,7 +80,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
             <div class="col-12 border-bottom border-2 py-2"></div>
             <div class="col-12 py-3 text-dark opacity-75 fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div class="col-12 border-2 py-4"></div>
+            <div class="col-12 py-5"></div>
           </form>
         </div>
       </div>
@@ -93,10 +93,20 @@
         </p>
       </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card m-4" style="width: 25rem;">
-            <img src="1.PNG" class="card-img-top" alt="...">
+      <div class="row mb-5">
+        <div class="col-md-4 border-end border-2">
+          <div class="card">
+            <img src="img/1.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 border-end border-2">
+          <div class="card">
+            <img src="img/1.PNG" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,18 +115,8 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card m-4" style="width: 25rem;">
-            <img src="1.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-4" style="width: 25rem;">
-            <img src="1.PNG" class="card-img-top" alt="...">
+          <div class="card">
+            <img src="img/1.PNG" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -125,40 +125,37 @@
           </div>
         </div>
       </div>
-      
-    </div>
 
-    <div class="row text-secondary py-4" style="background-color: #383d46;"></div>
-    <div class="row text-secondary" style="background-color: #383d46;">
-      <div class="col-md-4 border-end border-2">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      <div class="row text-secondary py-4" style="background-color: #383d46;"></div>
+      <div class="row text-secondary" style="background-color: #383d46;">
+        <div class="col-md-4 border-end border-2">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-4 border-end border-2">This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
+          This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
+          This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
+        </div>
+        <div class="col-md-4">This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
+          This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
+          This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.</div>
       </div>
-      <div class="col-md-4 border-end border-2">This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
-        This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
-        This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
-      </div>
-      <div class="col-md-4">This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
-        This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.
-        This is a simple hero unit, a simple jumbotron-style components for calling extra attention to featured content or information.</div>
+      <div class="row text-secondary py-4" style="background-color: #383d46;"></div>
     </div>
-    <div class="row text-secondary py-4" style="background-color: #383d46;"></div>
-  </div>
-    
       
       
 
